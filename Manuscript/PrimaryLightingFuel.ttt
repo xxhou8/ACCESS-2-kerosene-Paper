@@ -1,0 +1,62 @@
+\begin{table}[ht!]
+\centering
+\input{Tables/states.tex}
+\caption{Summary of sample numbers and change of share of kerosene in each of the six states}
+\label{states}
+\end{table}
+\efloatseparator
+ 
+\begin{table}[ht!]
+\centering
+\begin{subtable}[b]{\textwidth}
+\centering
+\input{Tables/sum_stats_2015.tex}
+\caption{2015 Summary statistics for explanatory variables (mean, SD, min, max, count)}
+\end{subtable}
+\begin{subtable}[b]{\textwidth}
+\centering
+\input{Tables/sum_stats_2018.tex}
+\caption{2018 Summary statistics for explanatory variables (mean, SD, min, max, count)}
+\end{subtable}
+\caption{Table shows the basic statistics of different explanatory variables including available hours of electricity service (night/day), outage days}
+\label{sum_stats}
+\end{table}
+\efloatseparator
+ 
+\begin{table}[ht!]
+\centering
+\begin{subtable}[b]{\textwidth}
+\centering
+\input{Tables/sum_stats_controls_2015.tex}
+\caption{2015 Summary statistics for control variables (mean, SD, min, max, count)}
+\end{subtable}
+\begin{subtable}[b]{\textwidth}
+\centering
+\input{Tables/sum_stats_controls_2018.tex}
+\caption{2018 Summary statistics for control variables (mean, SD, min, max, count)}
+\end{subtable}
+\caption{Table shows the basic statistics of different control variables including household expenditure, household social status, decision maker$’$s education level, decision maker$’$s gender, and household family size.}
+\label{sum_stats_control}
+\end{table}
+\efloatseparator
+ 
+\begin{table}[ht!]
+\centering
+\resizebox{\columnwidth}{!}{%
+\input{Tables/reg_results_explanatory.tex}
+%
+}
+\caption{Odds ratios for different regression models with standard errors clustered by village}
+\label{reg_results_explanatory}
+\end{table}
+\efloatseparator
+ 
+\begin{table}[ht!]
+\centering
+\resizebox{\columnwidth}{!}{%
+\input{Tables/reg_results_controls.tex}
+%
+}
+\caption{Odds ratios for different regression models with control variables included and standard errors clustered by village. The reference level for Caste is general caste; the reference level for Education is no formal schooling. }
+\label{reg_results_controls}
+\end{table}

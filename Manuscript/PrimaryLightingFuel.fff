@@ -1,0 +1,47 @@
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=1]{Figures/Mosaic.pdf}
+\caption{Mosaic plot of the proportion change in household primary lighting fuel choices. The figure shows the ratio difference of using electricity or kerosene as primary lighting fuel among our survey sample of 9,848 observations. The reported proportions are rounded to zero digits. The one-digit results are 17.1\%, 32.9\%, 4.5\%, 45.5\% accordingly.}
+\label{mosaic}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure*}
+\centering
+\begin{subfigure}[b]{\textwidth}
+\centering
+\includegraphics[width=0.5\textwidth]{Figures/Map_2015.pdf}
+\caption{2015}
+\end{subfigure}
+\begin{subfigure}[b]{\textwidth}
+\centering
+\includegraphics[width=0.5\textwidth]{Figures/Map_2018.pdf}
+\caption{2018}
+\end{subfigure}
+\caption{Map of six surveyed states: Madhya Pradesh (MP), Uttar Pradesh (UP), Bihar (BH), Jharkhand (JK), Odisha (OD), and West Bengal (WB). The figure shows the adoption rate of kerosene as the primary lighting fuel in electrified households by state.}
+\label{map}
+\end{figure*}
+\efloatseparator
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=1]{Figures/Satisfaction1.pdf}
+\caption{Stacked bar chart of household satisfaction levels from four groups in two rounds: using grid-electricity as the primary source of lighting fuel in both rounds, using kerosene as the primary source of lighting fuel in both rounds, switching from kerosene to electricity, and switching from electricity to kerosene. }
+\label{satisfaction1}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=1]{Figures/Satisfaction2.pdf}
+\caption{Figure shows households$'$ answers on the adequacy, affordability, reliability, and safety of the primary fuel they use in each round.}
+\label{satisfaction2}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=1]{Figures/AME.pdf}
+\caption{The average marginal effects (AME) with confidence intervals of different variables analyzed in model (6) in Table \ref{reg_results_controls}. This figure presents the influence of each predictor on the probability of adopting electric lights as the primary choice. The red dots show the average changes in the probability of using electricity as primary lighting option when variables increase by 1 unit.}
+\label{AME}
+\end{figure}

@@ -1,0 +1,20 @@
+\begin{thebibliography}{1}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{Aklinetal2016}
+M.~Aklin, C.~Cheng, K.~Ganesan, A.~Jain, J.~Urpelainen, Access to clean cooking
+  energy and electricity: Survey of states in india access, {Harvard Dataverse,
+  V1. http://dx.doi.org/10.7910/DVN/0NV9LF} (2016).
+
+\bibitem{Jainetal2018}
+A.~Jain, S.~Tripathi, S.~Mani, S.~Patnaik, T.~Shahidi, K.~Ganesan,
+  \href{https://www.ceew.in/publications/access-clean-cooking-energy-and-electricity}{Access
+  to clean cooking energy and electricity: {Survey} of states 2018}, {CEEW}
+  (2018).
+\newline\urlprefix\url{https://www.ceew.in/publications/access-clean-cooking-energy-and-electricity}
+
+\end{thebibliography}

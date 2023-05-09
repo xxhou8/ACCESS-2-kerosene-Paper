@@ -1,0 +1,22 @@
+\begin{table}
+\centering
+\renewcommand{\arraystretch}{1.5}
+\resizebox{\columnwidth}{!}{%
+\input{"Tables/reg_robust_offgrid.tex"}
+%
+}
+\caption{Robust testing results with the off-grid lighting option included.}
+\label{t:reg_robust_offgrid}
+\end{table}
+\efloatseparator
+ 
+\begin{table}
+\centering
+\renewcommand{\arraystretch}{1.5}
+\resizebox{\columnwidth}{!}{%
+\input{"Tables/reg_robust_linear.tex"}
+%
+}
+\caption{Robust testing results with linear models implemented.}
+\label{t:reg_robust_linear}
+\end{table}

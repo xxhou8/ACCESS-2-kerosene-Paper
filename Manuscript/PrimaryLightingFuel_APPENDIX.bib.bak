@@ -1,0 +1,44 @@
+% Encoding: UTF-8
+
+@Unpublished{Aklinetal2016,
+  author = {Aklin, Michael and Cheng, Chao-yo and Ganesan, Karthik and Jain, Abhishek and Urpelainen, Johannes},
+  title  = {Access to Clean Cooking Energy and Electricity: Survey of States in India ACCESS},
+  note   = {{Harvard Dataverse, V1. http://dx.doi.org/10.7910/DVN/0NV9LF}},
+  year   = {2016},
+}
+
+@Unpublished{Jainetal2018,
+  author = {Jain, Abhishek and Tripathi, Saurabh and Mani, Sunil and Sasmita Patnaik and Tauseef Shahidi and Karthik Ganesan},
+  title  = {Access to Clean Cooking Energy and Electricity: {Survey} of States 2018},
+  note   = {{CEEW}},
+  year   = {2018},
+  url    = {https://www.ceew.in/publications/access-clean-cooking-energy-and-electricity},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
+
+\begin{thebibliography}{xx}
+
+\harvarditem{Aklin, Cheng, Urpelainen, Ganesan, \harvardand\
+  Jain}{2016}{Aklinetal2016}
+Aklin, Micha\"{e}l, {Chao-yo} Cheng, Johannes Urpelainen, Karthik Ganesan,
+  \harvardand\ Abhishek Jain. 2016.
+\newblock ``Factors Affecting Household Satisfaction with Electricity Supply in
+  Rural {India}.'' {\em Nature Energy} 1: 16170.
+
+\harvarditem{Aklin, Cheng, Ganesan, Jain, Urpelainen, \harvardand\ {Council on
+  Energy, Environment and Water}}{2016}{ACCESS}
+Aklin, Micha\"{e}l, {Chao-yo} Cheng, Karthik Ganesan, Abhishek Jain, Johannes
+  Urpelainen, \harvardand\ {Council on Energy, Environment and Water}. 2016.
+\newblock ``Access to Clean Cooking Energy and Electricity: Survey of States in
+  India ({ACCESS}).'' Harvard Dataverse, V1.
+  http://dx.doi.org/10.7910/DVN/0NV9LF.
+
+\harvarditem[Jain et~al.]{Jain, Ray, Ganesan, Aklin, Cheng, \harvardand\
+  Urpelainen}{2015}{Jainetal2015}
+Jain, Abhishek, Sudatta Ray, Karthik Ganesan, Micha\"{e}l Aklin, {Chao-yo}
+  Cheng, \harvardand\ Johannes Urpelainen. 2015.
+\newblock ``Access to Clean Cooking Energy and Electricity: Survey of States.''
+  Council on Energy, Environment and Water, New Delhi.
+
+\end{thebibliography}

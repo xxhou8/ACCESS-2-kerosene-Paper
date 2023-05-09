@@ -1,0 +1,112 @@
+\documentclass[11pt]{article}
+
+\usepackage{inputenc}
+\usepackage{graphicx}
+\usepackage[square,numbers]{natbib} 
+\usepackage{sgame}
+\usepackage{amssymb,amsmath}
+%\usepackage[nolists]{endfloat}
+\usepackage[pdfborder={0 0 0}]{hyperref}
+\usepackage{chngpage}
+\usepackage{pdflscape}
+\usepackage{epstopdf}
+\usepackage{fullpage}
+\usepackage{setspace}
+\usepackage{booktabs}
+\usepackage{dcolumn}
+\usepackage{subfigure}
+\usepackage{ae,aecompl}
+\usepackage[T1]{fontenc}
+\usepackage{lineno,hyperref}
+\subfigcapmargin = 0.1cm
+\usepackage{xr-hyper}
+\usepackage{hyperref}
+\externaldocument{PrimaryLightingFuel}
+
+\makeatletter
+\newcommand{\noun}[1]{\textsc{#1}}
+
+\renewcommand{\thefigure}{A\arabic{figure}}
+\renewcommand{\thetable}{A\arabic{table}}
+\renewcommand{\refname}{Supporting Information: References}
+
+\renewcommand{\thesection}{A\arabic{section}}
+\renewcommand{\thesubsection}{A\arabic{section}.\arabic{subsection}}
+\renewcommand{\thesubsubsection}{A\arabic{section}.\arabic{subsection}.\arabic{subsubsection}}
+
+\renewcommand{\thepage}{APP-\arabic{page}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+
+%% A simple dot to overcome graphicx limitations
+
+\newcommand{\lyxdot}{.}
+\begin{document}
+
+
+\title{Lock-in for lighting: The puzzle of continued kerosene use among electrified households in six Indian states \footnote{Fully documented data and code are available on \href{https://doi.org/10.7910/DVN/PVWSOY}{Harvard Dataverse}.}\\\textbf{Supporting Information}}
+
+\author{Xiaoxue Hou\\Johns Hopkins SAIS \and Johannes Urpelainen\footnote{Corresponding author. Address: Rome Building, 4th Floor. 1619 Massachusetts Avenue, NW. Washington, DC 20036, USA. Tel: +1-734-757-0161. Email: JohannesU@jhu.edu.}\\Johns Hopkins SAIS}
+
+\maketitle
+
+\tableofcontents
+
+\clearpage
+
+\doublespacing
+
+\section{Data}
+
+In this research, we use a secondary source of survey data from The Access to Clean Cooking Energy and Electricity -- Survey of States (ACCESS) \citep{Aklinetal2016, Jainetal2018}. It is the largest energy access survey conducted in India. Households surveyed were sampled among six energy-deprived states (Bihar, Jharkhand, Madhya Pradesh, Odisha, Uttar Pradesh, and West Bengal). A three-stage probability-proportional-to-size (PPS) survey design was used to select a total of 51 districts, 714 rural villages, and 17,640 households. One district was sampled for each administrative division within a state, except Odisha in the second wave was oversampled to maintain a relatively balanced sample across states. For each of the 714 rural villages among 51 districts, 12 households were sampled in each survey round. Households were identified by unique IDs.
+
+These 17,640 observations include 8,568 households in 2015 and 9,072 households in 2018 to evaluate the energy use patterns. We use the survey as a quasi-panel dataset and take a subset of households that were connected to the grid in both rounds. In the main text, we evaluate households choosing lighting fuel between grid electricity and kerosene, so we leave out households choosing off-grid options. This leaves us with 9,878 household observations and 4,924 observations in 2015 and 4,991 in 2018. By limiting our targeted households to those appeared in both rounds, we have analyzed a total of 4,924 households in our research.
+
+The 40-minute survey questionnaire was conducted by including questions regarding socioeconomic information, state of electricity access, electricity satisfaction, cooking energy access, policy preferences, and willingness to pay for LPG or electricity. The enumerator initially asked the household head to answer the questions, and if not present, any other adult was interviewed. Questionnaires were designed to avoid direct sensitive questions and ensure ease of understanding. Enumerators were trained professionally. Each respondent was informed of the intention of the study and was also asked to sign the consent form before participation.
+
+\label{sect:data}
+
+
+
+\clearpage
+
+\section{Robustness}
+\label{sect:robustness}
+
+
+To test the robustness of our regression analysis, we includ the off-grid lighting options using the same regression models. To do so, we take a subset of households that were electrified either by grid or off-grid options and limit to the households that were surveyed in both rounds. This gives us 10,258 observations with 5,129 in each round. We use the same methodology of logistic regression to test our hypothesis on the influence of grid electricity quality on household choices of primary lighting fuel. We use a binary indicator as our dependent variable to show whether a household was using grid electricity or kerosene and off-grid options as primary lighting fuel. Table \ref{t:reg_robust_offgrid} shows the regression results of our explanatory variables. All of the three quality features are significant in influencing households$'$ choices. This confirms our hypothesis on the explanatory power of adequacy and reliability of grid electricity in determining households$'$ primary lighting fuel choices. Furthermore, we see that in our robustness test, the influence of electricity quality has almost the same impacts on choosing electricity as primary lighting fuel. 
+
+\begin{table}
+\centering
+\renewcommand{\arraystretch}{1.5}
+\resizebox{\columnwidth}{!}{%
+\input{"Tables/reg_robust_offgrid.tex"}
+%
+}
+\caption{Robust testing results with the off-grid lighting option included.}
+\label{t:reg_robust_offgrid}
+\end{table}
+ 
+Since we use logistic models, including fixed effects could lead to bias due to incidental parameter problems. To test the robustness of including fixed effects in our logit model, we implement simple linear models with the same outcome and explanatory variables. The linear models give similar results with a slightly smaller influence on the dependent variable. The inclusion of fixed effects doesn't lead to a large bias in our logistic models.
+
+\begin{table}
+\centering
+\renewcommand{\arraystretch}{1.5}
+\resizebox{\columnwidth}{!}{%
+\input{"Tables/reg_robust_linear.tex"}
+%
+}
+\caption{Robust testing results with linear models implemented.}
+\label{t:reg_robust_linear}
+\end{table}
+
+
+
+\clearpage
+
+\bibliographystyle{elsarticle-num}
+\bibliography{PrimaryLightingFuel_APPENDIX}
+
+\end{document}
